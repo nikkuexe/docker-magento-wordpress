@@ -1,6 +1,6 @@
 FROM occitech/magento:php5.5-apache
 
-ENV MAGENTO_VERSION 1.9.3.2
+ENV MAGENTO_VERSION 1.8.1.0
 ENV WORDPRESS_VERSION 4.7.3
 
 # Install Sytem Libraries
@@ -17,12 +17,9 @@ RUN cp -r /usr/src/magento/* /var/www/htdocs \
   && chown -R www-data:www-data /var/www/htdocs \
   && rm -rf /usr/src/magento
 
-# Install Magento Sample Data
-COPY ./files/magento-sample-data-1.9.1.0.tgz /opt/
+# Install Magento Auto Installer
 COPY ./bin/install-magento /usr/local/bin/install-magento
-COPY ./bin/install-sampledata-1.9 /usr/local/bin/install-sampledata
 RUN chmod +x /usr/local/bin/install-magento
-RUN chmod +x /usr/local/bin/install-sampledata
 
 # Install Wordpress
 COPY ./files/wordpress-$WORDPRESS_VERSION.tar.gz /opt/
