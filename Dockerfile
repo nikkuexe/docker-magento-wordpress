@@ -1,6 +1,6 @@
 FROM occitech/magento:php5.5-apache
 
-ENV MAGENTO_VERSION 1.9.3.2
+ENV MAGENTO_VERSION 1.9.0.1
 ENV WORDPRESS_VERSION 4.7.3
 
 # Install Sytem Libraries
