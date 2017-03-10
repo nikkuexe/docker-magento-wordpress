@@ -1,6 +1,7 @@
 # Docker Image for Magento 1.8 - 1.9 Bundled with Wordpress
 
 [![](https://images.microbadger.com/badges/image/nintenic/magento-wordpress.svg)](https://microbadger.com/images/nintenic/magento-wordpress)
+
 [![Docker build](http://dockeri.co/image/nintenic/magento-wordpress)](https://hub.docker.com/r/nintenic/magento-wordpress/)
 
 This repo creates a Docker image with both [Magento 1.8 - 1.9.x](http://magento.com/) and [Wordpress](http://wordpress.com) installed, that should run "out of the box" when used with Docker Compose.
