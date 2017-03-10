@@ -31,7 +31,7 @@ Wordpress is installed into `/var/www/htdocs/wp` folder.
 
 ### Docker Compose
 
-[Docker Compose](https://docs.docker.com/compose/) is the recommended way to run this image with MySQL database.
+[Docker Compose](https://docs.docker.com/compose/) is the recommended way to run this image with an MySQL database.
 
 A sample `docker-compose.yml` can be found in this repo.
 
