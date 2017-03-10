@@ -1,0 +1,26 @@
+version: '2'
+
+services:
+  web:
+    container_name: magento-web
+    build: .
+    ports:
+      - "80:80"
+    links:
+      - mysql
+    env_file:
+      - env
+    depends_on:
+      - mysql
+    volumes:
+      - data-htdocs:/var/www/htdocs
+  mysql:
+    container_name: magento-mysql
+    image: mysql:5.6.23
+    env_file:
+      - env
+    volumes:
+      - data-sql:/var/lib/mysql
+volumes:
+  data-sql:
+  data-htdocs:
