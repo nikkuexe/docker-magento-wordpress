@@ -140,8 +140,9 @@ cat magento-mysql-backup.sql | docker exec -i magento-mysql /usr/bin/mysql -u ro
 
 ####You use the same database running but reinstall the magento-web image and get an error about a table already existing
 
-1 - Log into magento-mysql and run `mysql -u root -p` and enter the db root password (default = "myrootpassword").
-2 - Once logged into the mysql shell, use the command `use magento;` followed with:
+1. Log into magento-mysql and run `mysql -u root -p` and enter the db root password (default = "myrootpassword").
+2. Once logged into the mysql shell, use the command `use magento;` followed with:
+
 ```
 DROP TABLE IF EXISTS `permission_variable`,`permission_block`,`customer_flowpassword`;
 ```
