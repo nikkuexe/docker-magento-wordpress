@@ -7,9 +7,7 @@ This repo creates a Docker image with both [Magento 1.8 - 1.9.x](http://magento.
 
 ### Expected Use
 
-> The goal of this repo is to quickly spin up Docker images for development in Magento 1.8.1 - 1.9.x. It's not intended for production deployment.
-
-> This repo is only for Magento 1.x. If you are looking for Magento 2.x, check out [alexcheng1982/docker-magento2](https://github.com/alexcheng1982/docker-magento2).
+> The goal of this repo is to quickly spin up Docker images for development in Magento 1.8.1 - 1.9.x. It's not intended for production deployment. This repo is only for Magento 1.x. If you are looking for Magento 2.x, check out the work of [alexcheng1982/docker-magento2](https://github.com/alexcheng1982/docker-magento2).
 
 #### Credit
 
