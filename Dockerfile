@@ -1,4 +1,4 @@
-FROM occitech/magento:php5.5-apache
+FROM occitech/magento:php7.0.13-apache
 
 ENV MAGENTO_VERSION 1.9.3.2
 ENV WORDPRESS_VERSION 4.7.3
